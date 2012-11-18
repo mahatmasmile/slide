@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>slide.test</title>
+<script src="js/jquery-1.7.0.min.js"></script>
+<script src="js/jquery.slide.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+var picurls={//图片连接
+	'p1':'img/001.jpg',
+	'p2':'img/002.jpg',
+	'p3':'img/003.jpg',
+	'p4':'img/004.jpg',
+	'p5':'img/005.jpg',
+	'p6':'img/001.jpg',
+	'p7':'img/002.jpg',
+	'p8':'img/003.jpg',
+	'p9':'img/004.jpg',
+	'p10':'img/005.jpg',
+};
+var urls={//每张图片对应的超链接
+	'u1':'http://www.baidu.com/s?wd=1',
+	'u2':'http://www.baidu.com/s?wd=2',
+	'u3':'http://www.baidu.com/s?wd=3',
+	'u4':'http://www.baidu.com/s?wd=4',
+	'u5':'http://www.baidu.com/s?wd=5',
+	'u6':'http://www.baidu.com/s?wd=6',
+	'u7':'http://www.baidu.com/s?wd=7',
+	'u8':'http://www.baidu.com/s?wd=8',
+	'u9':'http://www.baidu.com/s?wd=9',
+	'u10':'http://www.baidu.com/s?wd=10',
+};
+var labels={//底部黑色标签对应的文本内容
+	'l1':'图片一',
+	'l2':'图片二',
+	'l3':'图片三',
+	'l4':'图片四',
+	'l5':'图片五',
+	'l6':'图片六',
+	'l7':'图片七',
+	'l8':'图片八',
+	'l9':'图片九',
+	'l10':'图片十',
+};
+$("#slide_box").slide({//幻灯片层的ID，前面“井”号不能删除
+					'second':5,//多少秒翻页
+					'width':600,//每张图片的宽
+					'height':300,//每张图片的高
+					'pc':5,//一共多少张图片
+					'picurls':picurls,//看不懂就别动
+					'urls':urls,//看不懂就别动
+					'labels':labels//看不懂就别动
+					});	
+$("#slide_box1").slide({//幻灯片层的ID，前面“井”号不能删除
+					'second':5,//多少秒翻页
+					'width':700,//每张图片的宽
+					'height':350,//每张图片的高
+					'pc':7,//一共多少张图片
+					'picurls':picurls,//看不懂就别动
+					'urls':urls,//看不懂就别动
+					'labels':labels//看不懂就别动
+					});	
+$("#slide_box2").slide({//幻灯片层的ID，前面“井”号不能删除
+					'second':5,//多少秒翻页
+					'width':1000,//每张图片的宽
+					'height':500,//每张图片的高
+					'pc':10,//一共多少张图片
+					'picurls':picurls,//看不懂就别动
+					'urls':urls,//看不懂就别动
+					'labels':labels//看不懂就别动
+					});
+});
+</script>
+
+</head>
+
+<body>
+
+<!--start-->
+<div id="slide_box" ><!--幻灯片的层-->
+
+</div> 
+<!--end-->
+
+<div id="slide_box1" ><!--幻灯片的层-->
+
+</div> 
+<div id="slide_box2" ><!--幻灯片的层-->
+
+</div> 
+</body>
+</html>
