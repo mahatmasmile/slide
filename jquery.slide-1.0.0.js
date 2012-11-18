@@ -1,3 +1,4 @@
+/*jquery-slide-plugin Author:Michael_AS https://github.com/wsy07280012/MAS.GitHub */
 $.fn.slide = function(data) {
 	var left = 0,
 	pn = 2,
