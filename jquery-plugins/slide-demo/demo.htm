@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>slide.test</title>
 <script src="js/jquery-1.7.0.min.js"></script>
-<script src="js/jquery.slide-1.0.0.min.js"></script>
+<script src="js/jquery.slide-1.0.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 var picurls={//图片连接
@@ -50,6 +50,7 @@ $("#slide_box").slide({//幻灯片层的ID，前面“井”号不能删除
 					'pc':5,//一共多少张图片
 					'picurls':picurls,//看不懂就别动
 					'urls':urls,//看不懂就别动
+					'target':'blank',//看不懂就别动
 					'labels':labels//看不懂就别动
 					});	
 $("#slide_box1").slide({//幻灯片层的ID，前面“井”号不能删除
@@ -78,16 +79,13 @@ $("#slide_box2").slide({//幻灯片层的ID，前面“井”号不能删除
 <body>
 
 <!--start-->
-<div id="slide_box" ><!--幻灯片的层-->
-
+<div id="slide_box" ><!--幻灯片的层1-->
 </div> 
+<div id="slide_box1" ><!--幻灯片的层2-->
+</div> 
+<div id="slide_box2" ><!--幻灯片的层3-->
+</div>
 <!--end-->
 
-<div id="slide_box1" ><!--幻灯片的层-->
-
-</div> 
-<div id="slide_box2" ><!--幻灯片的层-->
-
-</div> 
 </body>
 </html>
